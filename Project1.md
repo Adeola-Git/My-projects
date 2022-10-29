@@ -1,7 +1,7 @@
 
 ## Devops Project-1
 #### WEB STACK IMPLEMENTATION (LAMP STACK) IN AWS
-##### STEP 1: INSTALLING APACHE AND UPDATING THE FIREWALL
+#### STEP 1: INSTALLING APACHE AND UPDATING THE FIREWALL
 * Commands:
   * sudo apt update
   * sudo apt install apache2
@@ -20,7 +20,7 @@
 
 ![test2](https://user-images.githubusercontent.com/115363604/198828831-66975455-92db-4769-903b-bcb3c89d23a2.png)
 
-##### STEP2: INSTALLING MYSQL
+#### STEP2: INSTALLING MYSQL
 * Commands:
      * sudo apt install mysql-server -y
 
@@ -40,14 +40,14 @@
  
  ![test6](https://user-images.githubusercontent.com/115363604/198839926-4a5970d4-6f1f-46ae-99bd-cbdd2505a04d.png)
  
- ##### STEP3: INSTALLING PHP
+ #### STEP3: INSTALLING PHP
  * Commands:
  
        * sudo apt install php install php libapache2-mod-php php-mysql
  
    ![test7](https://user-images.githubusercontent.com/115363604/198840118-2943202a-8927-4297-8d3c-8514837e6eff.png)
 
-##### STEP 4: CREATING A VIRTUAL HOST FOR MY WEBSITE USING APACHE
+#### STEP 4: CREATING A VIRTUAL HOST FOR MY WEBSITE USING APACHE
 * Commands:
      * sudo mkdir /var/www/projetlamp (Create project directory)
      * sudo chown -R $USER:USER /var/www/projectlamp (Change user ownership)
@@ -62,6 +62,7 @@
 
 * Commands:
      * sudo echo 'Hello LAMP from hostname' $(curl -s http://169.254.169.254/latest/meta-data/public-hostname) 'with public IP' $(curl -s http://169.254.169.254/latest/meta-data/public-ipv4) > /var/www/projectlamp/index.html (Create an index.html file in web root location)
+  
      * ls -l /var/www/projectlamp (Check if there is something in the folder)
  ![test9](https://user-images.githubusercontent.com/115363604/198840899-e4873dff-1516-482d-ba78-5eeb54c6758e.png)
  
@@ -69,8 +70,9 @@
  
  ![test10](https://user-images.githubusercontent.com/115363604/198841238-33f8576f-9ecb-493b-b295-1545c7197926.png)
  
- ##### STEP 5: ENABLE PHP ON THE WEBSITE
+ #### STEP 5: ENABLE PHP ON THE WEBSITE
  * Commands:
+
         * sudo vi /etc/apache2/mods-enabled/dir.conf (Edit dir.conf to place index.php at higher precedence)
         * sudo systemctl reload apache2 ( So the changes can take effect)
         * vi /var/www/projectlamp/index.php (Create PHP index page)
