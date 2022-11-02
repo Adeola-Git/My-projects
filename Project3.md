@@ -187,11 +187,11 @@
  #### FRONTEND CREATION (CONTINUED)
  * Commands:
   - cd src/components
-  - vi ListTodo.js (To paste the code into it 
+  - vi ListTodo.js (To paste the code into it) 
 
 ![test62](https://user-images.githubusercontent.com/115363604/199572096-67501914-3930-45a8-8440-f3aff88458e4.png)
 
-  - vi Todo.js (To paste the code into it 
+  - vi Todo.js (To paste the code into it)
   
 ![test63](https://user-images.githubusercontent.com/115363604/199572194-afedb412-d0a9-4b2f-8c61-48bdb549c771.png)
 
