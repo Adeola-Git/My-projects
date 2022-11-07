@@ -49,8 +49,9 @@
  
 ![test124](https://user-images.githubusercontent.com/115363604/200195089-f1891fe9-f384-4843-8ccc-02ee0c07ce50.png)
 
- * To verify that the Physical volume has been created successfully run the command:
+* To verify that the Physical volume has been created successfully run the command:
    - sudo pvs
+
 ![test125](https://user-images.githubusercontent.com/115363604/200195113-151e0a79-b390-4f38-a63a-dca64d57440a.png)
 
 * Use *vgcreate* utility to add all 3 PVs to a volume group (VG). Name the VG *webdata-vg*
@@ -64,12 +65,12 @@
    - sudo lvcraete -n apps-lv -l 14G webdata-vg
    - sudo lvcreate -n logs-lv -l 14G webdata -vg
    - sudo lvs ( To verify that the Logical Volume has been created successfully )
- 
+
 ![test127](https://user-images.githubusercontent.com/115363604/200195643-fd018e20-bd9f-4af8-b61e-9ee620b72817.png)
 
 * Verify the entire set up with the command:
   - sudo vgdisplay -v #view complete setup - VG, PV, and LV
-  - suod lsblk
+  - sudo lsblk
 
 ![test128](https://user-images.githubusercontent.com/115363604/200195744-b16adc8c-0156-446d-8379-bf70e731693f.png)
 
@@ -124,8 +125,7 @@
 
 ![test137](https://user-images.githubusercontent.com/115363604/200199937-8e60db7a-1f81-40ae-a3d6-dc6feb58468e.png)
 
-
- * Open up the Linux terminal to begin configuration
+* Open up the Linux terminal to begin configuration
 
 ![test138](https://user-images.githubusercontent.com/115363604/200200020-dde5424e-05d1-461b-b8e6-89252565bf0f.png)
 
