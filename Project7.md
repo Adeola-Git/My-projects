@@ -343,4 +343,24 @@ To check your subnet cidr – open your EC2 details in AWS web console and locat
  ![new47](https://user-images.githubusercontent.com/115363604/224244740-06e96c03-cb27-4695-8df5-d7d03ede1269.png)
 
 ##### Webserver 1
-*                                                                        
+* sudo vu tooling-db.sql ( T see everything )
+
+![new49](https://user-images.githubusercontent.com/115363604/224432958-38f924e5-02ae-4631-888f-fb0adf2fd7d6.png)
+                                                                       
+* sudo vi /etc/httpd/conf.d/welcome.conf ( To see the test page )                                                   * sudo mv /etc/httpd/conf.d/welcome.conf /etc/httpd/conf.d/welcome.backup              
+* sudo systemctl restart httpd
+* sudo systemctl status httpd
+
+![new50](https://user-images.githubusercontent.com/115363604/224433525-43066535-38e6-41ee-b186-2c78571805f6.png)
+                                                                       
+* Go back to the browser and refresh the page                                                                       
+
+![new51](https://user-images.githubusercontent.com/115363604/224433927-ad132b41-a120-4e8e-bdd8-2dfb23646e40.png)
+  - Put in the name *admin* and input the password into it. The page will look thus;                                                                       
+                                                                       
+![new52](https://user-images.githubusercontent.com/115363604/224433933-268960d6-0b99-49e7-bd0f-7af3811a2b3f.png)
+
+
+                                                                       
+                                                                       
+                                                                       
