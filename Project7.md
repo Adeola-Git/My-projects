@@ -376,9 +376,7 @@
 ![new50](https://user-images.githubusercontent.com/115363604/224433525-43066535-38e6-41ee-b186-2c78571805f6.png)
                                                                        
 * Go back to the browser and refresh the page                                                                       
-
-![new51](https://user-images.githubusercontent.com/115363604/224433927-ad132b41-a120-4e8e-bdd8-2dfb23646e40.png)
-
+                                                                     
  - Put in the name *admin* and input the password into it. The page will look thus;                                                                       
                                                                        
 ![new52](https://user-images.githubusercontent.com/115363604/224433933-268960d6-0b99-49e7-bd0f-7af3811a2b3f.png)
