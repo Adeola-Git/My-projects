@@ -56,6 +56,7 @@
 
 ![new58](https://user-images.githubusercontent.com/115363604/224461471-3241fdc8-bc1b-4c39-b7e2-64233d0d0742.png)
 
+
 ![new59](https://user-images.githubusercontent.com/115363604/224461473-af8bda88-b0c6-43d8-8752-2a60cd0d66af.png)
 
 * Open two ssh/Putty consoles for both Web Servers and run following command:
