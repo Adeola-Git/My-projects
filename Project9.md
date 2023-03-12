@@ -167,7 +167,8 @@
   
 ![new91](https://user-images.githubusercontent.com/115363604/224517184-57480702-1776-48e1-a8c2-c37e7821832e.png)
 
-* Go back to *jenkins* and rebuild.
+* Go back to *jenkins* and rebuild. 
+* If you see the changes you had previously made in your GitHub – the job works as expected.
   
 ![new100](https://user-images.githubusercontent.com/115363604/224518257-820464e4-bef2-432e-ae83-0664299222b9.png)
 
