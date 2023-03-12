@@ -3,7 +3,7 @@
 
 ## LOAD BALANCER SOLUTION WITH NGINX AND SSL/TLS
 
-#### STEP 1: CONFIGURE NGINX AS A LOAD BALANCER
+#### CONFIGURE NGINX AS A LOAD BALANCER
 * You can either uninstall Apache from the existing Load Balancer server, or create a fresh installation of Linux for Nginx.
 * Uninstalled Apache from the existing Load Balancer server with the command:
   - sudo apt remove apache2
