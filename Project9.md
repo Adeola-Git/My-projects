@@ -155,7 +155,7 @@
   
 ![new89](https://user-images.githubusercontent.com/115363604/224517070-95623649-2820-42c7-9b31-05cb0dc5b293.png)
 
-* Webhook will trigger a new job and in the "Console Output" of the job. It cam eout with an error.
+* Webhook will trigger a new job and in the "Console Output" of the job. It came out with an error.
 
 ![new101](https://user-images.githubusercontent.com/115363604/224518313-0874d697-2680-4735-9a9a-76aa1b9a65be.png)
 
@@ -165,10 +165,10 @@
   - sudo chmod -R 777 /mnt/apps
   - sudo chown -R nobody:nobody /mnt/apps
   
-* Go back to *jenkins* and rebuild.
-  
 ![new91](https://user-images.githubusercontent.com/115363604/224517184-57480702-1776-48e1-a8c2-c37e7821832e.png)
 
+* Go back to *jenkins* and rebuild.
+  
 ![new100](https://user-images.githubusercontent.com/115363604/224518257-820464e4-bef2-432e-ae83-0664299222b9.png)
 
 
