@@ -73,7 +73,8 @@
 * Save the configuration and let us try to run the build. For now we can only do it manually.
   Click "Build Now" button, if you have configured everything correctly, the build will be successfull and you will see it.
   
-![new76](https://user-images.githubusercontent.com/115363604/224515584-5a988275-576e-4f03-8653-88817e344a37.png)
+![new102](https://user-images.githubusercontent.com/115363604/224518330-cd116c14-b933-4c5f-bd2c-be1e4bdf676c.png)
+
 
 * Click "Configure" your job/project and add these two configurations
 * Configure triggering the job from GitHub webhook:
@@ -90,7 +91,7 @@
   
 ![new78](https://user-images.githubusercontent.com/115363604/224515950-303ae442-1b48-4b50-be2b-6df39a30e7ec.png)
   
-![new79](https://user-images.githubusercontent.com/115363604/224515957-90e3a3f4-b634-43d1-902e-a32f21b288c6.png)
+![new103](https://user-images.githubusercontent.com/115363604/224518414-b17fc44d-8fbc-4113-8380-d7284d5fba9a.png)
   
 * You have now configured an automated Jenkins job that receives files from GitHub by webhook trigger (this method is considered as ‘push’ because the changes are being ‘pushed’ and files transfer is initiated by GitHub). There are also other methods: trigger one job (downstreadm) from another (upstream), poll GitHub periodically and others.
 * By default, the artifacts are stored on Jenkins server locally
@@ -156,7 +157,8 @@
 
 * Webhook will trigger a new job and in the "Console Output" of the job. It cam eout with an error.
 
-![new90](https://user-images.githubusercontent.com/115363604/224517092-1903dbe4-0ec4-4938-9db8-2811d088f592.png)
+![new101](https://user-images.githubusercontent.com/115363604/224518313-0874d697-2680-4735-9a9a-76aa1b9a65be.png)
+
 
 * Go back to the *nfs server* and check the permission using the command:
   - ll /mnt/apps
@@ -167,7 +169,8 @@
   
 ![new91](https://user-images.githubusercontent.com/115363604/224517184-57480702-1776-48e1-a8c2-c37e7821832e.png)
 
-![new92](https://user-images.githubusercontent.com/115363604/224517274-b841d02e-5f7c-4795-8b09-08cddddd7c47.png)
+![new100](https://user-images.githubusercontent.com/115363604/224518257-820464e4-bef2-432e-ae83-0664299222b9.png)
+
 
 * To make sure that the files in /mnt/apps have been udated – connect via SSH/Putty to your NFS server and check README.MD file
   - cat /mnt/apps/README.md
