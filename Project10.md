@@ -15,16 +15,16 @@
 ![new104](https://user-images.githubusercontent.com/115363604/224520834-497ae4a9-1caf-4c65-b7f8-8df9c7da2c7e.png)
 
 * Install and configure Nginx as a load balancer to point traffic to the resolvable DNS names of the webservers.
-* Update the instance and Install Nginx
-  -sudo apt update
-  -sudo apt install nginx
+* Update the instance and Install Nginx.
+  - sudo apt update
+  - sudo apt install nginx
   
 ![new106](https://user-images.githubusercontent.com/115363604/224520927-d9c95231-5fef-4530-9c72-8c53ae099667.png)
 
 * Open the default nginx configuration file
   - sudo vi /etc/nginx/nginx.conf
 
-![new108](https://user-images.githubusercontent.com/115363604/224521330-6f7e235c-1072-462a-8d01-d594c9a3f80b.png)
+![new125](https://user-images.githubusercontent.com/115363604/224523420-7c8515de-41c1-4ea3-bfd2-9b2e5c8623a5.png)
 
 * Restart Nginx and make sure the service is up and running
   - sudo systemctl enable && sudo systemctl start nginx
@@ -48,12 +48,12 @@
   
 ![new110](https://user-images.githubusercontent.com/115363604/224521706-80ce7e88-d4b2-41e5-835d-7401ffbb68a2.png)
 
-* Go back to your doamin and copy each of the *nameserver* in the *AWS* console under records and add it to the nameservers in your doamin. So that rouste 53 abd domain name can be connected to each other.
+* Go back to your doamin and copy each of the *Value/Route traffic to* in the *route 53 dashboard* under records and add it to the nameservers in your doamin. So that   route 53 and   the domain name can be connected to each other.
 
 ![new111](https://user-images.githubusercontent.com/115363604/224521869-49166ef4-b42a-4801-893e-481b4d713ee2.png)
 
 * In Route 53, you will create a record, the value will be the load balancer public IP address.
-* You will create another record and add the record name as *www*, the value will be the public IP address of the Load balancer  then create.
+* You will create another record and add the record name as *www*, the value will be the public IP address of the Load balancer then create.
 
 ![Screenshot 2023-03-11 221140](https://user-images.githubusercontent.com/115363604/224522112-58802165-6916-4844-871e-0249c198e52b.png)
 
@@ -61,9 +61,9 @@
 
 ![new112](https://user-images.githubusercontent.com/115363604/224522234-48c12b41-7b0e-4cca-bc4a-ee6fc5cfd5ad.png)
 
-* It came out with an error, which I was able to fix doing the following
-  - Spin up my *NFS* server and remounted it. The restarted and check the status which came out ok.
-  - Spin up my *webserver* and remounted the */var/www* directory. Started and check the status and everything came out ok.
+* It came out with an error, which I was able to fix by doing the following;
+  - Spin up my *NFS* server and remounted it. Then restarted and check the status which came out ok.
+  - Spin up my *webservers* and remounted the */var/www* directory. Started and check the status and everything came out ok.
   - Went back to reload nginx server and it came out good too.
  
 ![new113](https://user-images.githubusercontent.com/115363604/224522401-7c915976-89f3-4ca6-93bb-a54fb93a47b0.png)
@@ -75,12 +75,11 @@
 ![new114](https://user-images.githubusercontent.com/115363604/224522495-e566dc2d-e765-4d3d-951a-73d9144e3484.png)
 
 * Install certbot
-
-sudo snap install --classic certbot
+  - sudo snap install --classic certbot
 
 ![new115](https://user-images.githubusercontent.com/115363604/224522558-de68cdb1-9d5b-4320-b865-c4b1f4ab8a5e.png)
 
-* Go to the *nginx* cof=nfiguration file and edit it by adding the domain name to it
+* Go to the *nginx* configuration file and edit it by adding the domain name to it.
 * uncomment out include /etc/nginx/sites-enabled/*;.
   - sudo vi /etc/nginx/nginx.conf
 
@@ -120,7 +119,7 @@ sudo snap install --classic certbot
 
 ![new122](https://user-images.githubusercontent.com/115363604/224523113-520d85fe-22cd-4b69-aafd-ac693bcfdb56.png)
 
-* Go bac and refresh the page.
+* Go back and refresh the page.
 
 ![new123](https://user-images.githubusercontent.com/115363604/224523196-a44cda1d-1efa-4f9b-b5fc-c52eb24601be.png)
 
