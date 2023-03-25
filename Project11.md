@@ -107,11 +107,11 @@ Save below inventory structure in the inventory/dev file to start configuring yo
 
 Note: Ansible uses TCP port 22 by default, which means it needs to ssh into target servers from Jenkins-Ansible host – for this you can implement the concept of ssh-agent. Now you need to import your key into ssh-agent:
     
-    - eval `ssh-agent -s`
+ eval `ssh-agent -s`
     
 ![pro16](https://user-images.githubusercontent.com/115363604/227689668-cbf09922-1581-4cda-8664-1fe5dd72afa7.png)
     
-    - ssh-add <path-to-private-key>
+ ssh-add <path-to-private-key>
 
 ![pro20](https://user-images.githubusercontent.com/115363604/227689945-cd168b59-6dc1-4937-90e1-b76989ae1999.png)
 
@@ -221,6 +221,7 @@ After editing the ssh config file, try re connecting again
 Create a folder called *ansible-config-mgt* and give it neccssary permission
 
 cd ansible-config-mgt
+
 ansible-playbook -i /var/lib/jenkins/jobs/ansible/builds/<build-number>/archive/inventory/dev.yml /var/lib/jenkins/jobs/ansible/builds/<build-number>/archive/playbooks/common.yml
     
 ![pro40](https://user-images.githubusercontent.com/115363604/227695622-f71543f0-0f33-461a-8a4d-12936331f0d0.png)
@@ -229,9 +230,13 @@ ansible-playbook -i /var/lib/jenkins/jobs/ansible/builds/<build-number>/archive/
 
     
 You will remove the blocker by adding a space to the end of the *common.yml* file.
-Run all the git command which are, *gti status*, *git add* *git commit* and *git oush*
-Go to jenkins to *compare and pull request*, *create pull request*, *merge pull request* and *confirm merge8
-Go git, under ansible and perform a build request. Which then would change the build number. 
+
+Run all the git command which are, *git status*, *git add*, *git commit* and *git oush*
+
+Go to your jenkins to *compare and pull request*, *create pull request*, *merge pull request* and *confirm merge*
+
+Go to your git, under ansible and perform a build request. Which then would change the build number. 
+
 Rerun the command again and it should work.
     
 ![pro42](https://user-images.githubusercontent.com/115363604/227695951-454345c3-9be1-43bf-9de0-5722821e7e45.png)
@@ -239,7 +244,8 @@ Rerun the command again and it should work.
 ![pro43](https://user-images.githubusercontent.com/115363604/227695955-caec6be4-1aff-49cd-b38d-c9d013c50ff4.png)
 
 You can go to each of the servers and check if wireshark has been installed by running which wireshark or wireshark --version.
-You will check for one ubuntu server and one Redhat server
+
+You can check for one ubuntu server and one Redhat server
     
 ![pro44](https://user-images.githubusercontent.com/115363604/227696061-9d828f8b-3eec-497a-8b53-7309a189251a.png)
     
