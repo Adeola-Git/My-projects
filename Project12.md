@@ -136,7 +136,7 @@ NOTE: Ensure you are using ssh-agent to ssh into the Jenkins-Ansible instance ju
 
 4. In /etc/ansible/ansible.cfg file uncomment roles_path string and provide a full path to your roles directory roles_path    = /home/ubuntu/ansible-config-mgt/roles, so Ansible could know where to find configured roles.
 
-![m20](https://user-images.githubusercontent.com/115363604/229572259-a3d135f9-c487-4c9e-ad37-69612f9857b6.png)
+![image](https://user-images.githubusercontent.com/115363604/229576647-5d6a06cb-66fb-4df8-92a8-3a42bcfb90c8.png)
 
 5. It is time to start adding some logic to the webserver role. Go into tasks directory, and within the main.yml file, start writing configuration tasks to do the following:
 
