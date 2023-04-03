@@ -150,7 +150,7 @@ NOTE: Ensure you are using ssh-agent to ssh into the Jenkins-Ansible instance ju
 
 Your main.yml may consist of following tasks:
   
-![m21](https://user-images.githubusercontent.com/115363604/229572640-883dad41-d1c6-4cb4-bf3b-53e0c57e2004.png)
+![image](https://user-images.githubusercontent.com/115363604/229577337-7bd1ea15-ef40-49c4-96ac-e5ad9bc7dc8c.png)
 
 ### REFERENCE WEBSERVER ROLE
   
